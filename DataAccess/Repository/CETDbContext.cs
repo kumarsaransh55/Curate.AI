@@ -13,7 +13,7 @@ namespace DataAccess.Repository
         public CETDbContext(){}
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"server=DDC5-L-W076NT5\SQLEXPRESS; database=CETDB; integrated security=true");
+            optionsBuilder.UseSqlServer("server=(localdb)\\MSSQLLocalDB; database=CurateAIDB; integrated security=true");
         }
 
         public DbSet<UserDetails> User_Details{ get; set; }

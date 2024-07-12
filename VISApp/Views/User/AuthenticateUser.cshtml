@@ -7,11 +7,11 @@
 <h1>Login</h1>
 
 
-<div class="row">
-    <div class="col-md-4">
+<div class="card-header">
+    <div class="align-content-center">
         <form asp-action="AuthenticateUser">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+            <div class="form-group,">
                 <label asp-for="User_EmailId" class="control-label"></label>
                 <input asp-for="User_EmailId" class="form-control" />
                 <span asp-validation-for="User_EmailId" class="text-danger"></span>
@@ -23,18 +23,24 @@
             </div>
             @ViewBag.error
             <br>
-            <div class="form-group">
-                <input type="submit" value="Login" class="btn btn-primary" />
+            <div class="modal-dialog-centered">
+                <input  type="submit" value="Login" class="btn btn-primary" /> <br />  <br />
+                
             </div>
         </form>
     </div>
     
 </div>
-
+New User?
+<a asp-action="RegisterUser">Register</a>
 <div>
-    New User?
-    <a asp-action="RegisterUser">Register</a>
+    
 </div>
+@* <div style="border: dashed" >
+    <img src="~/images/05eb85bd-f933-411b-8c27-05fa4037600c.jpg" />
+</div> *@
+
+    <img class="rounded float-right" src="~/images/f8cc9e5b-180f-40fd-a619-4fba12e1f79e.jpg" />
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
