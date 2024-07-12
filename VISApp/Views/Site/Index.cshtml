@@ -1,0 +1,24 @@
+﻿@model Curate.AI.Models.Site
+
+@{
+    ViewData["Title"] = "Curate.AI";
+}
+
+<h1>Upload Image</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" enctype="multipart/form-data" asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <label asp-for="Image" class="control-label"></label>
+                <div class="custom-file">
+                <input asp-for="Image" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <span asp-validation-for="Image" class="text-danger"></span>
+            <div class="form-group">
+                <input type="submit" value="Upload" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

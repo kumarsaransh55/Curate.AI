@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{B663FBFE-96FB-460F-93A5-926907EAF74D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Curate.AI", "VISApp\Curate.AI.csproj", "{04409E6B-39B9-437E-A9C4-212B4E9201CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B663FBFE-96FB-460F-93A5-926907EAF74D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B663FBFE-96FB-460F-93A5-926907EAF74D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B663FBFE-96FB-460F-93A5-926907EAF74D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B663FBFE-96FB-460F-93A5-926907EAF74D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04409E6B-39B9-437E-A9C4-212B4E9201CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04409E6B-39B9-437E-A9C4-212B4E9201CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04409E6B-39B9-437E-A9C4-212B4E9201CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04409E6B-39B9-437E-A9C4-212B4E9201CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44BDBE97-D12E-4942-9D32-A06AEE505B25}
+	EndGlobalSection
+EndGlobal
