@@ -8,10 +8,9 @@
     <h1 class="text-center">Upload Your Image</h1>
     <div class="card shadow-lg">
         <div class="card-body">
-            <form asp-action="UploadImage" method="post" enctype="multipart/form-data">
+            <form method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="image">Upload Image:</label>
-                    <input type="file" class="form-control-file" id="image" name="image" required>
+                    <input type="file" class="form-control-file" name="file" required>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Upload</button>
             </form>
