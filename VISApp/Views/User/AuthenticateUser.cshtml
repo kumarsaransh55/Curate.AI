@@ -4,44 +4,40 @@
     ViewData["Title"] = "AuthenticateUser";
 }
 
-<h1>Login</h1>
+<h1 class="text-center">Login</h1>
 
-
-<div class="card-header">
-    <div class="align-content-center">
+<div class="card">
+    <div class="card-header text-center">
+        <h2>Please Sign In</h2>
+    </div>
+    <div class="card-body">
         <form asp-action="AuthenticateUser">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group,">
+            <div class="form-group">
                 <label asp-for="User_EmailId" class="control-label"></label>
                 <input asp-for="User_EmailId" class="form-control" />
                 <span asp-validation-for="User_EmailId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="User_Password" class="control-label"></label>
-                <input asp-for="User_Password" class="form-control" />
+                <input asp-for="User_Password" class="form-control" type="password" />
                 <span asp-validation-for="User_Password" class="text-danger"></span>
             </div>
             @ViewBag.error
-            <br>
-            <div class="modal-dialog-centered">
-                <input  type="submit" value="Login" class="btn btn-primary" /> <br />  <br />
-                
+            <div class="text-center mt-3">
+                <input type="submit" value="Login" class="btn btn-primary" />
             </div>
         </form>
     </div>
-    
+    <div class="card-footer text-center">
+        <p>New User? <a asp-action="RegisterUser">Register here</a></p>
+    </div>
 </div>
-New User?
-<a asp-action="RegisterUser">Register</a>
-<div>
-    
-</div>
-@* <div style="border: dashed" >
-    <img src="~/images/05eb85bd-f933-411b-8c27-05fa4037600c.jpg" />
-</div> *@
 
-    <img class="rounded float-right" src="~/images/f8cc9e5b-180f-40fd-a619-4fba12e1f79e.jpg" />
+<img class="rounded float-right mt-3" src="~/images/f8cc9e5b-180f-40fd-a619-4fba12e1f79e.jpg" alt="Image" />
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
